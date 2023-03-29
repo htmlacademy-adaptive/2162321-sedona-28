@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Анна Перелыгина](https://up.htmlacademy.ru/adaptive/28/user/2162321).
-* Наставник: `Неизвестно`.
+- Студент: [Анна Перелыгина](https://up.htmlacademy.ru/adaptive/28/user/2162321).
+- Наставник: [Александр Медведев](https://htmlacademy.ru/profile/exteep).
 
 ---
 
