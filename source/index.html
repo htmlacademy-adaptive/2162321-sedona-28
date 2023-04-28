@@ -34,47 +34,54 @@
     <main class="main-container">
       <section class="main-promo">
         <h1 class="visually-hidden">Туризм в Седоне</h1>
-        <img class="main-promo" src="img/index/welcome.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон - отстой.">
+        <img class="promo-background-image" src="img/index/welcome.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон - отстой.">
       </section>
 
-      <section class="advantages__wrapper advantages">
+      <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advantages__title section__title title">Седона — небольшой городок в Арионе, заслуживающий большего!</p>
-        <p class="advantages__description section__description description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="section-page">
+          <p class="section-page__title">Седона — небольшой городок в Арионе, заслуживающий большего!</p>
+          <p class="section-page__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
         <ol class="advantages__list">
-          <li class="advantages__item advantages__item--blue">
+          <li class="advantages__item advantages__item--color-blue">
             <h3 class="advantages__title title">Настоящий городок</h3>
+            <p class="advantages__description description">— №1 —</p>
             <p class="advantages__description description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             <img class="advantages__image" src="img/index/photo-city.jpg" alt="Вид на город.">
-            <ul class="services__list">
-              <li class="advantages__item services__item">
-                <h4 class="advantages__title services__item--residence title">Жилье</h4>
+            <ul class="advantages__service">
+              <li class="advantages__item advantages__item--motels">
+                <h4 class="advantages__title title">Жилье</h4>
                 <p class="advantages__description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item services__item">
-                <h4 class="advantages__title services__item--food title">Еда</h4>
+              <li class="advantages__item advantages__item--food">
+                <h4 class="advantages__title title">Еда</h4>
                 <p class="advantages__description description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="advantages__item services__item">
-                <h4 class="advantages__title services__item--souvenirs title">Сувениры</h4>
+              <li class="advantages__item advantages__item--souvenirs">
+                <h4 class="advantages__title title">Сувениры</h4>
                 <p class="advantages__description description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
-          <li class="advantages__item advantages__item--blue">
+          <li class="advantages__item advantages__item--color-blue">
             <h3 class="advantages__title title">Там есть мост дьявола</h3>
+            <p class="advantages__description description">— №2 —</p>
             <p class="advantages__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <img class="advantages__image" src="img/index/photo-mountains.jpg" alt="Вид на горы.">
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--color-grey">
             <h3 class="advantages__title title">Небольшая площадь</h3>
+            <p class="advantages__description description">— №3 —</p>
             <p class="advantages__description description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--color-grey">
             <h3 class="advantages__title title">Красивая дорога</h3>
+            <p class="advantages__description description">— №4 —</p>
             <p class="advantages__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--color-grey">
             <h3 class="advantages__title title">Мало туристов</h3>
+            <p class="advantages__description description">— №5 —</p>
             <p class="advantages__description description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
@@ -98,11 +105,11 @@
     <footer class="main-footer">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="main-footer__wrapper">
-        <a class="footer__hashtag" href="#">#VIZITSEDONA</a>
-        <div class="footer__social social">
+        <a class="main-footer__hashtag" href="#">#VIZITSEDONA</a>
+        <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
@@ -118,9 +125,9 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">Разработано</span>
+        <div class="main-footer__copyright">
+          <a class="main-footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="main-footer__copyright__text">Разработано</span>
             <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z">
             </svg>

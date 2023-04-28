@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
       </a>
       <nav class="main-nav">
@@ -37,118 +37,114 @@
         <img class="main-promo" src="img/catalog/sedona-catalog.svg" width="229" height="39" alt="Sedona.">
       </section>
 
-      <section class="form__wrapper form">
-        <h2 class="form__title section__title form-title">Оставьте свой отзыв</h2>
-        <p class="form__description section__description form-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="feedback__name name">
-            <legend class="name__title form-title">Представьтесь:</legend>
-            <ul class="name__list">
-              <li class="name__item">
-                <label class="label-name__title form-text" for="name">Имя<sup>*</sup>:</label>
-                <input class="input__name" type="text" name="name" id="name" value="Пётр" required>
+      <section class="feedback">
+        <h2 class="feedback__title title">Оставьте свой отзыв</h2>
+        <p class="feedback__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="feedback-form form">
+            <legend class="form__title">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="form-item">
+                <label class="form-item__text" for="name">Имя<sup>*</sup>:</label>
+                <input class="form-item__text" type="text" name="name" id="name" value="Пётр" required>
               </li>
-              <li class="name__item">
-                <label class="label-surname__title form-text" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="input__surname" type="text" name="surname" id="surname" value="Пустота" required>
+              <li class="form-item">
+                <label class="form-item__text" for="surname">Фамилия<sup>*</sup>:</label>
+                <input class="form-item__text" type="text" name="surname" id="surname" value="Пустота" required>
               </li>
-              <li class="name__item">
-                <label class="label-patronymic__title form-text" for="patronymic">Отчество:</label>
-                <input class="input__patronymic" type="text" name="patronymic" id="patronymic" value="Викторович">
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="feedback__contacts contacts">
-            <legend class="contacts__title form-title">Контактная информация:</legend>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <label class="label-phone__title form-text" for="phone">Контактный телефон<sup>*</sup>:</label>
-                <input class="input__phone" type="tel" name="phone-number" id="phone" value="Введите телефон" required>
-              </li>
-              <li class="contacts__item">
-                <label class="label-email__title form-text" for="e-mail">Электронная почта<sup>*</sup>:</label>
-                <input class="input__email" type="email" name="e-mail" id="e-mail" value="Введите e-mail" required>
+              <li class="form-item">
+                <label class="form-item__text" for="patronymic">Отчество:</label>
+                <input class="form-item__text" type="text" name="patronymic" id="patronymic" value="Викторович">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="feedback__impression impression">
-            <legend class="impression__title form-title">Ваше общее впечатление:</legend>
-            <ul class="impression__list">
-              <li class="impression__item">
-                <label class="label__impression">
-                  <input class="input__impression" type="radio" name="impress" value="positive" checked>
+          <fieldset class="feedback-form form">
+            <legend class="form__title">Контактная информация:</legend>
+            <ul class="form__list">
+              <li class="form-item">
+                <label class="form-item__text" for="phone">Контактный телефон<sup>*</sup>:</label>
+                <input class="form-item__text" type="tel" name="phone-number" id="phone" value="Введите телефон" required>
+              </li>
+              <li class="form-item">
+                <label class="form-item__text" for="e-mail">Электронная почта<sup>*</sup>:</label>
+                <input class="form-item__text" type="email" name="e-mail" id="e-mail" value="Введите e-mail" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="feedback-form form">
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <ul class="form__list">
+              <li class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__input" type="radio" name="impress" value="positive" checked>
                   Скорее положительное
                 </label>
               </li>
-              <li class="impression__item">
-                <label class="label__impression">
-                  <input class="input__impression" type="radio" name="impress" value="negative">
+              <li class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__input" type="radio" name="impress" value="negative">
                   Скорее отрицательное
                 </label>
               </li>
-              <li class="impression__item">
-                <label class="label__impression">
-                  <input class="input__impression" type="radio" name="impress" value="difficult">
+              <li class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__input" type="radio" name="impress" value="difficult">
                   Затрудняюсь ответить
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="feedback__attraction attraction">
-            <legend class="attraction__title form-title">Посещенные достопримечательности:</legend>
-            <ul class="attraction__list">
-              <li class="attraction__item">
-                <label class="label__attraction">
-                  <input class="input__attraction" type="checkbox" name="devil-bridge" checked>
+          <fieldset class="feedback-form form">
+            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <ul class="form__list">
+              <li class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__input" type="checkbox" name="devil-bridge" checked>
                   Мост дьявола
                 </label>
               </li>
-              <li class="attraction__item">
-                <label class="label__attraction">
-                  <input class="input__attraction" type="checkbox" name="mount-Bell" checked>
+              <li class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__input" type="checkbox" name="mount-Bell" checked>
                   Гора-Колокол
                 </label>
               </li>
-              <li class="attraction__item">
-                <label class="label__attraction">
-                  <input class="input__attraction" type="checkbox" name="slide-park" checked>
+              <li class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__input" type="checkbox" name="slide-park" checked>
                   Слайд-парк
                 </label>
               </li>
-              <li class="attraction__item">
-                <label class="label__attraction">
-                  <input class="input__attraction" type="checkbox" name="red-rocks">
+              <li class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__input" type="checkbox" name="red-rocks">
                   Красные скалы
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="feedback__emotions emotions">
-            <legend class="emotions__title form-title">Опишите свои эмоции:</legend>
-            <label class="label__emotions" for="emotions-text">
-              <textarea class="emotions-text" name="massage" id="emotions-text" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
-            </label>
+          <fieldset class="feedback-form form">
+            <legend class="form__title">Опишите свои эмоции:</legend>
+            <textarea class="form-textarea" name="massage" id="emotions-text">Опишите подробно все свои восторги</textarea>
           </fieldset>
+          <button class="form-button button" type="submit">Отправить отзыв</button>
+          <small class="form-note">* — обязательные поля</small>
         </form>
-        <div>
-          <button class="feedback__button button" type="submit">Отправить отзыв</button>
-          <small>* — обязательные поля</small>
-        </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="main-footer__wrapper">
-        <a class="footer__hashtag" href="#">#VIZITSEDONA</a>
-        <div class="footer__social social">
+        <a class="main-footer__hashtag" href="#">#VIZITSEDONA</a>
+        <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
@@ -164,9 +160,9 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">Разработано</span>
+        <div class="main-footer__copyright">
+          <a class="main-footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="main-footer__copyright__text">Разработано</span>
             <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z">
             </svg>
