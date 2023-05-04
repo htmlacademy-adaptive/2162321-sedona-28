@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+// Добавляет миксины и переменные
+@import "./global/variables.scss";
+@import "./global/mixin.scss";
+
+// Базовые настройки
+@import "./global/fonts";
+@import "./global/base";
+
+// Общие блоки
+@import "./blocks/button.scss";
+@import "./blocks/description.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-promo.scss";
+@import "./blocks/search.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/social.scss";
+@import "./blocks/title.scss";
+
+// Блоки index
+@import "./blocks/index/advantades.scss";
+@import "./blocks/index/map.scss";
+@import "./blocks/index/section-page.scss";
+
+// Блоки Catalog
+@import "./blocks/catalog/photo.scss";
+@import "./blocks/catalog/video.scss";
+
+// Блоки Form
+@import "./blocks/form/feedback-form.scss";
+@import "./blocks/form/feedback.scss";
+@import "./blocks/form/form-button.scss";
+@import "./blocks/form/form-control.scss";
+@import "./blocks/form/form-note.scss";
+@import "./blocks/form/form-text.scss";
+@import "./blocks/form/form-textarea.scss";
+@import "./blocks/form/form-title.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/modal.scss";
