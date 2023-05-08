@@ -1,0 +1,16 @@
+.form-item__text {
+  @include text-small;
+  text-transform: uppercase;
+  color: $color-small-text;
+}
+
+.form-item__text-field {
+  @include title;
+  font-weight: 700;
+}
+
+.form-item__text-field-contact {
+  @include title;
+  font-weight: 700;
+  opacity: 0.3;
+}

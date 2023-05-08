@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: $main-font;
+  @include text-small;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+ul,
+ol {
+  @include reset;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input {
+  font-family: inherit;
+}

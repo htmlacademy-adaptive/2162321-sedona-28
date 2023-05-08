@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -16,16 +17,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Html Academy</a>
+              <a class="main-nav__link" ref="#">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -34,27 +35,29 @@
     <main class="main-container">
       <section class="main-promo">
         <h1 class="visually-hidden">Форма для отзыва</h1>
-        <img class="main-promo" src="img/catalog/sedona-catalog.svg" width="229" height="39" alt="Sedona.">
+        <img class="form-promo" src="img/catalog/sedona-catalog.svg" width="229" height="39" alt="Sedona.">
       </section>
 
       <section class="feedback">
-        <h2 class="feedback__title title">Оставьте свой отзыв</h2>
-        <p class="feedback__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="feedback__wrapper">
+          <h2 class="feedback__title title">Оставьте свой отзыв</h2>
+          <p class="feedback__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+          <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="feedback-form form">
             <legend class="form__title">Представьтесь:</legend>
             <ul class="form__list">
               <li class="form-item">
                 <label class="form-item__text" for="name">Имя<sup>*</sup>:</label>
-                <input class="form-item__text" type="text" name="name" id="name" value="Пётр" required>
+                <input class="form-item__text-field" type="text" name="name" id="name" value="Пётр" required>
               </li>
               <li class="form-item">
                 <label class="form-item__text" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="form-item__text" type="text" name="surname" id="surname" value="Пустота" required>
+                <input class="form-item__text-field" type="text" name="surname" id="surname" value="Пустота" required>
               </li>
               <li class="form-item">
                 <label class="form-item__text" for="patronymic">Отчество:</label>
-                <input class="form-item__text" type="text" name="patronymic" id="patronymic" value="Викторович">
+                <input class="form-item__text-field" type="text" name="patronymic" id="patronymic" value="Викторович">
               </li>
             </ul>
           </fieldset>
@@ -64,11 +67,11 @@
             <ul class="form__list">
               <li class="form-item">
                 <label class="form-item__text" for="phone">Контактный телефон<sup>*</sup>:</label>
-                <input class="form-item__text" type="tel" name="phone-number" id="phone" value="Введите телефон" required>
+                <input class="form-item__text-field-contact" type="tel" name="phone-number" id="phone" value="Введите телефон" required>
               </li>
               <li class="form-item">
                 <label class="form-item__text" for="e-mail">Электронная почта<sup>*</sup>:</label>
-                <input class="form-item__text" type="email" name="e-mail" id="e-mail" value="Введите e-mail" required>
+                <input class="form-item__text-field-contact" type="email" name="e-mail" id="e-mail" value="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -172,20 +175,19 @@
       </div>
     </footer>
 
-    <div class="modal">
-      <div class="modal__wrapper">
+    <div class="modal-error modal">
+      <div class="modal-error__wrapper">
         <h2 class="modal__title form-title">Что-то пошло не так!</h2>
         <p class="modal__description form-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button">Ok</button>
+        <button class="modal__button modal__button--ok button">Ok</button>
       </div>
     </div>
-    <div class="modal">
-      <div class="modal__wrapper">
+    <div class="modal-done modal">
+      <div class="modal-done__wrapper">
         <h2 class="modal__title form-title">Ваш отзыв отправлен!</h2>
-        <p class="modal__description form-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal__button button">Закрыть окно</button>
+        <p class="modal__description form-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal__button modal__button--close button">Закрыть окно</button>
       </div>
     </div>
   </body>
 </html>
-

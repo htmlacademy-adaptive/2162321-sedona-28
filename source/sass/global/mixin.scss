@@ -1,0 +1,33 @@
+@mixin title {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin big-title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin text-small {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin advantages-grey {
+  background-color: #eeeeee;
+}
+
+@mixin image {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: $error-image-color;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

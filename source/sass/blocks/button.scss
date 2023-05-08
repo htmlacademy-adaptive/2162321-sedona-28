@@ -1,0 +1,8 @@
+.button {
+  @include big-title;
+  background-color: $main-color;
+  color: #ffffff;
+  border: 0;
+  display: inline-block;
+  padding: 16px 49px;
+}

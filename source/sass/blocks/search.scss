@@ -1,0 +1,13 @@
+.search__wrapper {
+  margin: 0;
+  padding: 38px 0 49px;
+}
+
+.search__title {
+  @include big-title;
+  margin: 0;
+}
+
+.search__description {
+  color: $color-small-text;
+}
