@@ -1,10 +1,11 @@
-// Добавляет миксины и переменные
+ // Добавляет миксины и переменные
 @import "./global/variables.scss";
 @import "./global/mixin.scss";
 
 // Базовые настройки
 @import "./global/fonts";
 @import "./global/base";
+@import "./global/utils.scss";
 
 // Общие блоки
 @import "./blocks/button.scss";
@@ -20,22 +21,26 @@
 @import "./blocks/title.scss";
 
 // Блоки index
-@import "./blocks/index/advantades.scss";
-@import "./blocks/index/map.scss";
-@import "./blocks/index/section-page.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/map.scss";
+@import "./blocks/section-page.scss";
 
 // Блоки Catalog
-@import "./blocks/catalog/photo.scss";
-@import "./blocks/catalog/video.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/video.scss";
+@import "./blocks/inner-promo.scss";
 
 // Блоки Form
-@import "./blocks/form/feedback-form.scss";
-@import "./blocks/form/feedback.scss";
-@import "./blocks/form/form-button.scss";
-@import "./blocks/form/form-control.scss";
-@import "./blocks/form/form-note.scss";
-@import "./blocks/form/form-text.scss";
-@import "./blocks/form/form-textarea.scss";
-@import "./blocks/form/form-title.scss";
-@import "./blocks/form/form.scss";
-@import "./blocks/form/modal.scss";
+@import "./blocks/form-promo.scss";
+@import "./blocks/feedback-form.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/form-button.scss";
+@import "./blocks/form-control.scss";
+@import "./blocks/form-note.scss";
+@import "./blocks/form-text.scss";
+@import "./blocks/form-textarea.scss";
+@import "./blocks/form.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/form-item.scss";
+@import "./blocks/modal-error.scss";
+@import "./blocks/modal-done.scss";

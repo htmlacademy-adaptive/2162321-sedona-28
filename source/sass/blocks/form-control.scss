@@ -1,0 +1,5 @@
+.form-control__label {
+  @include title;
+  font-weight: 700;
+  text-transform: none;
+}

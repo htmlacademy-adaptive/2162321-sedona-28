@@ -1,0 +1,41 @@
+.photo__wrapper {
+  padding: 37px 20px 25px;
+}
+
+.photo__item {
+  padding: 24px 20px 30px;
+}
+
+.photo__section-title {
+  @include title;
+  font-weight: 700;
+  margin: 0;
+}
+
+.photo__description {
+  color: $color-small-text;
+}
+
+.photo__card {
+  background-color: $error-image-color;
+}
+
+.photo__title {
+  @include text-small;
+  font-weight: 700;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  @include text-small;
+  font-weight: 400;
+  text-align: start;
+  text-transform: none;
+  color: $color-small-text;
+}
+
+.photo__like-counter {
+  @include text-small;
+  font-weight: 700;
+}

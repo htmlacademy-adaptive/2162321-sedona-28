@@ -1,9 +1,9 @@
 .main-promo {
   @include image;
-  background-image: url("/source/img/index/back-promo.jpg");
+  background-image: url("/source/img/back-promo-inner.jpg");
 }
 
-.promo-background-image {
+.form-promo {
   display: block;
   margin-left: auto;
   margin-right: auto;

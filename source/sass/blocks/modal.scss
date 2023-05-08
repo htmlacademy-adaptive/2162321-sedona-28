@@ -1,0 +1,23 @@
+.modal__title {
+  @include title;
+  margin: 0;
+  padding: 0 0 30px;
+}
+
+.modal__description {
+  @include text-small;
+  color: $color-small-text;
+  margin: 0;
+  padding: 0 0 28px;
+}
+
+.modal__button {
+  @include title;
+  padding: 18px 64px 14px 63px;
+}
+
+.modal__button--close {
+  @include title;
+  margin: 20px;
+  padding: 18px 62px 14px 60px;
+}

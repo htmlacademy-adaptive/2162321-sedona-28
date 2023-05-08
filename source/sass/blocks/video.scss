@@ -1,0 +1,14 @@
+.video {
+  padding: 17px 20px 0;
+}
+
+.video__title {
+  @include title;
+  font-weight: 700;
+  margin: 0;
+}
+
+.video__description {
+  @include text-small;
+  color: $color-small-text;
+}
