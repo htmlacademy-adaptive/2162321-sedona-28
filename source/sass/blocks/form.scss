@@ -1,3 +1,9 @@
-.feedback-form {
-  border: 0 none;
+.form__title {
+  @include title;
+  font-weight: 700;
+  padding: 0;
+}
+
+.form__list {
+  text-align: start;
 }

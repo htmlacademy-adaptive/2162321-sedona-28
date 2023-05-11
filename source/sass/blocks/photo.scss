@@ -1,23 +1,57 @@
 .photo__wrapper {
   padding: 37px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 155px;
+  }
+}
+
+.photo__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    border: 0;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 0;
+  }
 }
 
 .photo__item {
   padding: 24px 20px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.photo__item--stretch {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+
+    .photo__card {
+      height: 400px;
+    }
+  }
+}
+
+.photo__card {
+  width: 100%;
+  background-color: $error-image-color;
 }
 
 .photo__section-title {
   @include title;
   font-weight: 700;
   margin: 0;
-}
-
-.photo__description {
-  color: $color-small-text;
-}
-
-.photo__card {
-  background-color: $error-image-color;
 }
 
 .photo__title {
@@ -32,7 +66,23 @@
   font-weight: 400;
   text-align: start;
   text-transform: none;
-  color: $color-small-text;
+}
+
+.photo__button-like {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  left: 0px;
+  background-image: url("/source/img/catalog/like-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  background-color: $main-color-second;
+
+  @media (min-width: $desktop-width) {
+    color: $main-color-second;
+  }
 }
 
 .photo__like-counter {
