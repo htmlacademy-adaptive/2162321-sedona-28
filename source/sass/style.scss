@@ -3,25 +3,25 @@
 @import "./global/mixin.scss";
 
 // Базовые настройки
+@import "./blocks/page-wrapper.scss";
 @import "./global/fonts";
 @import "./global/base";
 @import "./global/utils.scss";
 
 // Общие блоки
-@import "./blocks/button.scss";
-@import "./blocks/description.scss";
-@import "./blocks/main-container.scss";
-@import "./blocks/main-footer.scss";
-@import "./blocks/main-header.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/main-promo.scss";
+@import "./blocks/buttons.scss";
+@import "./blocks/descriptions.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
 @import "./blocks/search.scss";
-@import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
 @import "./blocks/title.scss";
 
 // Блоки index
+@import "./blocks/main-promo.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/services.scss";
 @import "./blocks/map.scss";
 @import "./blocks/section-page.scss";
 
@@ -31,8 +31,6 @@
 @import "./blocks/inner-promo.scss";
 
 // Блоки Form
-@import "./blocks/form-promo.scss";
-@import "./blocks/feedback-form.scss";
 @import "./blocks/feedback.scss";
 @import "./blocks/form-button.scss";
 @import "./blocks/form-control.scss";
@@ -40,7 +38,5 @@
 @import "./blocks/form-text.scss";
 @import "./blocks/form-textarea.scss";
 @import "./blocks/form.scss";
-@import "./blocks/modal.scss";
 @import "./blocks/form-item.scss";
-@import "./blocks/modal-error.scss";
-@import "./blocks/modal-done.scss";
+@import "./blocks/modal.scss";

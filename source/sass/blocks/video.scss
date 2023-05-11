@@ -1,5 +1,15 @@
 .video {
+  display: flex;
+  flex-direction: column;
   padding: 17px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 199px 84px;
+  }
 }
 
 .video__title {
@@ -10,5 +20,10 @@
 
 .video__description {
   @include text-small;
-  color: $color-small-text;
+}
+
+.videoplayer {
+  display: block;
+  background-color: $error-image-color;
+  width: 100%;
 }

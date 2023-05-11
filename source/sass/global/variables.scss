@@ -1,5 +1,6 @@
 // Цвета
 $main-color: #81B3D2;
+$main-color-second: #ffffff;
 $color-hover: #669EC0;
 $color-active: #5496BD;
 $color-disabled: #E5E5E5;
@@ -7,8 +8,9 @@ $color-current: #766357;
 $color-form: #F2F2F2;
 $color-form-hover: #E5E5E5;
 $color-form-active: #D5D5D5;
-$color-small-text: #333333;
-$error-image-color: #908f8f;
+$main-color-text: #333333;
+$main-color-text-second: #000000;
+$error-image-color: #B7B4B4;
 $color-advantages: #eeeeee;
 
 // Шрифт
@@ -16,6 +18,5 @@ $main-font: "PT Sans", "Arial", sans-serif;
 
 // Размеры viewport
 $mobile-width: 320px;
-$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;

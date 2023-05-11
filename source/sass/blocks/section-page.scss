@@ -1,10 +1,23 @@
+.section-page {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 18px 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 124px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 358px 44px;
+  }
+}
+
 .section-page__title {
   @include title;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 32px 0 35px;
 }
 
 .section-page__description {
@@ -12,7 +25,5 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  color: $color-small-text;
   margin: 0;
-  padding: 0 0 16px;
 }

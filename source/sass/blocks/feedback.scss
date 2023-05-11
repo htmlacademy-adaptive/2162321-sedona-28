@@ -1,14 +1,69 @@
 .feedback {
-  padding: 36px 20px 46px;
+  padding: 36px 0 46px;
 }
 
-.feedback__title {
-  margin: 0;
-  padding-bottom: 24px;
+.feedback__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 28px 166px 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 382px 68px;
+  }
 }
 
-.feedback__description {
-  color: $color-small-text;
+.feedback-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 58px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 100px;
+    padding: 0 120px;
+  }
+}
+
+.feedback-form {
+  border: none;
   margin: 0;
-  padding-bottom: 28px;
+  padding: 0;
+}
+
+.feedback-form--stretch {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    position: relative;
+  }
+}
+
+.feedback-form--stretch-impression {
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 63px;
+    margin-bottom: 73px;
+  }
+}
+
+.feedback-form--stretch-attractions {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.feedback-form--stretch-more {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
 }
