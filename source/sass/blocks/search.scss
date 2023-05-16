@@ -7,11 +7,37 @@
 
   @media (min-width: $tablet-width) {
     max-width: 458px;
-    padding: 60px 20px 55px;
+    padding: 60px 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 66px;
   }
 }
 
 .search__title {
   @include big-title;
   margin: 0;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    @include large-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.search__description {
+  margin: 0;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 44px;
+  }
 }

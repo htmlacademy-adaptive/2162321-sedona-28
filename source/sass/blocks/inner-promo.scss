@@ -1,4 +1,21 @@
 .inner-promo {
-  @include image;
-  background-image: url("/source/img/back-promo-inner.jpg");
+  background-image: url("../img/triangle.svg"), url("../img/back-promo-inner.jpg");
+  background-size: 100% auto, cover;
+  background-position: left 0 bottom 0;
+  background-color: $error-image-color;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  height: 158px;
+
+  @media (min-width: $tablet-width) {
+    padding: 95px 0 117px;
+  }
+}
+
+.inner-promo__background-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 52px 0 67px;
 }

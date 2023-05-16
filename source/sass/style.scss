@@ -9,7 +9,7 @@
 @import "./global/utils.scss";
 
 // Общие блоки
-@import "./blocks/buttons.scss";
+@import "./blocks/button.scss";
 @import "./blocks/descriptions.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/header.scss";
@@ -32,7 +32,6 @@
 
 // Блоки Form
 @import "./blocks/feedback.scss";
-@import "./blocks/form-button.scss";
 @import "./blocks/form-control.scss";
 @import "./blocks/form-note.scss";
 @import "./blocks/form-text.scss";
