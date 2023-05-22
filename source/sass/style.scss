@@ -9,34 +9,31 @@
 @import "./global/utils.scss";
 
 // Общие блоки
-@import "./blocks/buttons.scss";
+@import "./blocks/button.scss";
 @import "./blocks/descriptions.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
-@import "./blocks/search.scss";
 @import "./blocks/social.scss";
 @import "./blocks/title.scss";
-
-// Блоки index
-@import "./blocks/main-promo.scss";
-@import "./blocks/advantages.scss";
-@import "./blocks/services.scss";
-@import "./blocks/map.scss";
+@import "./blocks/inner-promo.scss";
 @import "./blocks/section-page.scss";
 
+// Блоки index
+@import "./blocks/index/main-promo.scss";
+@import "./blocks/index/advantages.scss";
+@import "./blocks/index/services.scss";
+@import "./blocks/index/map.scss";
+@import "./blocks/index/search.scss";
+
 // Блоки Catalog
-@import "./blocks/photo.scss";
-@import "./blocks/video.scss";
-@import "./blocks/inner-promo.scss";
+@import "./blocks/catalog/photo.scss";
+@import "./blocks/catalog/video.scss";
 
 // Блоки Form
-@import "./blocks/feedback.scss";
-@import "./blocks/form-button.scss";
-@import "./blocks/form-control.scss";
-@import "./blocks/form-note.scss";
-@import "./blocks/form-text.scss";
-@import "./blocks/form-textarea.scss";
-@import "./blocks/form.scss";
-@import "./blocks/form-item.scss";
-@import "./blocks/modal.scss";
+@import "./blocks/form/form-feedback.scss";
+@import "./blocks/form/field-control.scss";
+@import "./blocks/form/data-form.scss";
+@import "./blocks/form/field-checkbox.scss";
+@import "./blocks/form/page-form.scss";
+@import "./blocks/form/modal.scss";

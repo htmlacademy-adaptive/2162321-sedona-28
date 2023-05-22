@@ -1,14 +1,14 @@
 .main-footer {
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    min-width: $tablet-width;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding: 36px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    min-width: $desktop-width;
+    padding: 36px 120px;
   }
 }
 
@@ -20,14 +20,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin: 0 60px;
     padding: 0;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 120px;
+
   }
 }
 
@@ -37,14 +36,70 @@
   color: #000000;
   margin-bottom: 30px;
 
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+   color: #B3B3B3;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: $main-color;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+
+    svg {
+      opacity: 0.6;
+    }
+  }
+}
+
+.social__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-footer__copyright__link {
+  display: inline-block;
+  position: relative;
+  padding: 7px 38px 7px 0;
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+   color: #B3B3B3;
   }
 }
 
 .main-footer__copyright-text {
   font-weight: 400;
   color: #000000;
+
 
   @media (min-width: $tablet-width) {
     margin-right: 40px;

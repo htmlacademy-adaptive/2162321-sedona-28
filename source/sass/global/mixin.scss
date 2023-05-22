@@ -7,8 +7,12 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
+}
+
+@mixin large-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
 }
 
 @mixin text-small {
@@ -17,7 +21,6 @@
 }
 
 @mixin image {
-  background-size: auto;
   background-repeat: no-repeat;
   background-color: $error-image-color;
 }

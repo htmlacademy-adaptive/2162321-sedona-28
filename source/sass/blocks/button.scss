@@ -1,0 +1,29 @@
+.button {
+  @include big-title;
+  background-color: $main-color;
+  color: $main-color-second;
+  border: 0;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  display: inline-block;
+  padding: 16px;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+    color: #ffffff4d;
+
+    span {
+      opacity: 0.6;
+    }
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}

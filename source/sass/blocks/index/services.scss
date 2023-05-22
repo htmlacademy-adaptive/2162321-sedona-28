@@ -1,0 +1,94 @@
+.service {
+  background-color: $main-color-second;
+  color: $main-color-text-second
+}
+
+.service__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 33px;
+  margin: 0;
+  padding: 31px 18px 46px 0;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    grid-column: 1/4;
+    text-align: center;
+    padding: 0;
+    gap: 0;
+  }
+}
+
+.service__item {
+  position: relative;
+  padding-left: 65px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -8px;
+    left: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--motels::after {
+    background-image: url("/source/img/index/motels.svg");
+  }
+
+  &--food::after {
+    background-image: url("/source/img/index/food.svg");
+  }
+
+  &--souvenirs::after {
+    background-image: url("/source/img/index/souvenirs.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    min-width: 256px;
+    box-sizing: border-box;
+    padding: 158px 33px 60px 33px;
+    margin: 0;
+
+    &::after {
+      width: 80px;
+      height: 75px;
+      top: 64px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 400px;
+    padding: 169px 50px 69px;
+
+    &::after {
+      top: 72px;
+    }
+  }
+}
+
+.service__title {
+  @include title;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    @include big-title;
+    margin-bottom: 35px;
+  }
+}
+
+.service__description {
+  @media (min-width: $mobile-width) {
+    br {
+      display: none;
+    }
+  }
+}

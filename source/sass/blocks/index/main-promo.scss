@@ -1,0 +1,17 @@
+.main-promo {
+  background-image: url("../img/triangle.svg"), url("../img/index/back-promo.jpg");
+  background-size: 100% auto, cover;
+  background-position: left 0 bottom 0;
+  background-color: $error-image-color;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  height: 389px;
+}
+
+.promo-background-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 90px 0 85px 0;
+}

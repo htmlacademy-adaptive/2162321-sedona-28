@@ -1,1 +1,21 @@
+.main-header {
+  @media (min-width: $tablet-width) {
+  display: flex;
+  position: relative;
+  }
+}
 
+.main-header__logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -40px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
