@@ -21,16 +21,34 @@
   margin: 0;
   margin-bottom: 35px;
   color: $main-color-text-second;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
   }
 }
 
 .modal__description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
 }
 
 .modal__error {
@@ -63,8 +81,17 @@
 }
 
 .modal__button-block {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   background-color: $color-form;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
 }
 
 .modal__sent-button {

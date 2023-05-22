@@ -34,8 +34,15 @@
 }
 
 .search__description {
+  @include text-small;
   margin: 0;
   padding-bottom: 31px;
+
+  @media (min-width: $mobile-width) {
+    br {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 44px;

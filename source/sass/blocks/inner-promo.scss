@@ -5,11 +5,14 @@
   background-color: $error-image-color;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
-  padding: 0 10px 0 10px;
   height: 158px;
 
   @media (min-width: $tablet-width) {
-    padding: 95px 0 117px;
+    height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 302px;
   }
 }
 
@@ -18,4 +21,12 @@
   margin-left: auto;
   margin-right: auto;
   padding: 52px 0 67px;
+
+  @media (min-width: $tablet-width) {
+    padding: 95px 0 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 101px 0 120px;
+  }
 }

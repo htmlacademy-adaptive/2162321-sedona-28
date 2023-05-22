@@ -84,3 +84,11 @@
     margin-bottom: 35px;
   }
 }
+
+.service__description {
+  @media (min-width: $mobile-width) {
+    br {
+      display: none;
+    }
+  }
+}

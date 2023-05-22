@@ -1,7 +1,7 @@
 .section-page {
   display: flex;
   flex-direction: column;
-  padding: 32px 18px 16px;
+  padding: 32px 30px 16px;
 
   @media (min-width: $tablet-width) {
     padding: 48px 124px 55px;
@@ -22,6 +22,12 @@
 
   @media (min-width: $tablet-width) {
     @include big-title;
+  }
+}
+
+.section-page__title--large {
+  @media (min-width: $desktop-width) {
+    @include large-title;
   }
 }
 

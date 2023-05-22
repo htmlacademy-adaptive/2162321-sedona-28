@@ -1,0 +1,72 @@
+.field-checkbox__label {
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0 10px 46px;
+  position: relative;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
+}
+
+.field-checkbox {
+  margin-top: 16px;
+}
+
+.field-checkbox__mark {
+  position: absolute;
+  left: 20px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  top: 0;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.field-checkbox__input {
+  position: relative;
+  margin: 0;
+  margin-right: 16px;
+}
+
+.field-checkbox__input[type="radio"]:checked + .field-checkbox__mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}
+
+.field-checkbox__input[type="checkbox"]:checked + .field-checkbox__mark::before {
+  position: absolute;
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  content: "";
+}
+
+.field-checkbox__input[type="radio"]:checked + .field-checkbox__mark:active::before,
+.field-checkbox__input[type="checkbox"]:checked + .field-checkbox__mark:active::before {
+  opacity: 0.3;
+}
