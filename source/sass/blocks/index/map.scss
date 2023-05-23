@@ -1,6 +1,7 @@
 .map iframe {
   width: 100%;
-  background-image: url("../img/index/background-map.jpg");
+  background-image: url("../img/background-map.jpg");
+  background-size: 100% cover;
   background-color: $error-image-color;
   border: none;
   display: block;
