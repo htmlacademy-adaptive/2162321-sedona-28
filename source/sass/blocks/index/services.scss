@@ -37,15 +37,15 @@
   }
 
   &--motels::after {
-    background-image: url("/source/img/index/motels.svg");
+    background-image: url("/source/img/motels.svg");
   }
 
   &--food::after {
-    background-image: url("/source/img/index/food.svg");
+    background-image: url("/source/img/food.svg");
   }
 
   &--souvenirs::after {
-    background-image: url("/source/img/index/souvenirs.svg");
+    background-image: url("/source/img/souvenirs.svg");
   }
 
   @media (min-width: $tablet-width) {

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-wrapper">
     <header class="main-header">
@@ -36,7 +40,7 @@
     <main class="main-container">
       <div class="inner-promo">
         <h1 class="visually-hidden">Фото и видео Седоны</h1>
-        <img class="inner-promo__background-image" src="img/catalog/sedona-catalog.svg" width="229" height="39" alt="Sedona.">
+        <img class="inner-promo__background-image" src="img/sedona-catalog.svg" width="229" height="39" alt="Sedona.">
       </div>
       <section class="photo">
         <div class="photo__wrapper">
@@ -45,7 +49,13 @@
         </div>
         <ul class="photo__list">
           <li class="photo__item photo__item--stretch">
-            <img class="photo__card" src="img/catalog/photo-1.jpg" width="280" height="280" alt="Дорога на закате.">
+            <a href="img/photo-1-desktop@1.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="photo__card" src="img/catalog/photo-1-mobile@1.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на закате.">
+              </picture>
+            </a>
             <div class="photo__info">
               <div class="photo__info-wrapper">
                 <h3 class="photo__title">Неродные просторы</h3>
@@ -64,7 +74,13 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__card" src="img/catalog/photo-2.jpg" width="280" height="280" alt="Цветы на фоне скал.">
+            <a href="img/photo-2-desktop@1.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="photo__card" src="img/catalog/photo-2-mobile@1.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Цветы на фоне скал.">
+              </picture>
+            </a>
             <div class="photo__info">
               <div class="photo__info-wrapper">
                 <h3 class="photo__title">Местная растительность</h3>
@@ -83,7 +99,13 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__card" src="img/catalog/photo-3.jpg" width="280" height="280" alt="Дорога в лесу.">
+            <a href="img/photo-3-desktop@1.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="photo__card" src="img/catalog/photo-3-mobile@1.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в лесу.">
+              </picture>
+            </a>
             <div class="photo__info">
               <div class="photo__info-wrapper">
                 <h3 class="photo__title">Дорога на север</h3>
@@ -102,7 +124,13 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__card" src="img/catalog/photo-4.jpg" width="280" height="280" alt="Фотография скал.">
+            <a href="img/photo-4-desktop@1.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img class="photo__card" src="img/catalog/photo-4-mobile@1.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография скал.">
+              </picture>
+            </a>
             <div class="photo__info">
               <div class="photo__info-wrapper">
                 <h3 class="photo__title">Мост дьявола</h3>
@@ -127,11 +155,14 @@
         <h2 class="visually-hidden">Видеопрезентация</h2>
         <p class="video__title">Все еще сомневаетесь?</p>
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video__image" href="https://www.youtube.com/user/htmlacademyru">
-          <img class="videoplayer" src="img/catalog/video.jpg" width="280" height="177" alt="Видеопрезентация тура.">
-          <button class="visually-hidden video__button" type="button">
-            <span class="visually-hidden">Запустить видео</span>
-          </button>
+        <div class="video__wrapper">
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="videoplayer" src="img/video-mobile@1.jpg"srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация тура.">
+            </picture>
+          </a>
         </div>
       </section>
     </main>

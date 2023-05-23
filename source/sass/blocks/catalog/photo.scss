@@ -57,8 +57,8 @@
 .photo__item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 24px 20px 25px;
+  width: 100%;
 
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid #E5E5E5;
@@ -79,16 +79,16 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }
 
 .photo__card {
   align-items: flex-start;
-  width: 100%;
   background-color: $error-image-color;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
+  width: 100%;
 }
 
 .photo__info {
