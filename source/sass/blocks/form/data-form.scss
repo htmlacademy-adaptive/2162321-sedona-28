@@ -22,7 +22,7 @@
       width: 100%;
       background-color: #dbdbdb;
       left: 0;
-      top: calc(0% - 13px);
+      top: -13px;
       z-index: 0;
     }
   }
@@ -120,7 +120,6 @@
   min-height: 150px;
   justify-items: stretch;
   padding: 16px;
-  margin-bottom: 56px;
 
   &::placeholder {
     color: fade(#000000, 30%);
@@ -147,6 +146,6 @@
 }
 
 .data-form--emotions {
-  padding: 0 20px;
+  margin: 0 20px 42px;
   border: none;
 }
