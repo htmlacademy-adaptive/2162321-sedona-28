@@ -101,6 +101,11 @@
 }
 
 .advantages__item-photo--reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     grid-column: 3/-1;
   }

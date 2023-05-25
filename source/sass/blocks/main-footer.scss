@@ -24,10 +24,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .main-footer__hashtag {
@@ -41,7 +37,7 @@
   }
 
   &:active {
-   color: #B3B3B3;
+    color: #B3B3B3;
   }
 
   @media (min-width: $tablet-width) {
@@ -85,7 +81,7 @@
   }
 
   &:active {
-   color: #B3B3B3;
+    color: #B3B3B3;
   }
 }
 

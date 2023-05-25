@@ -25,14 +25,6 @@
       top: calc(0% - 13px);
       z-index: 0;
     }
-
-    .data-form__legend {
-      position: relative;
-      z-index: 10;
-      width: 402px;
-      padding: 0 30px;
-      background-color: #ffffff;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +38,11 @@
   font-weight: 700;
   color: #000000;
   text-align: center;
+  position: relative;
+  width: 100%;
   padding: 24px 0 20px 0;
+  z-index: 10;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     padding: 0;

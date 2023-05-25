@@ -1,4 +1,4 @@
- // Добавляет миксины и переменные
+// Добавляет миксины и переменные
 @import "./global/variables.scss";
 @import "./global/mixin.scss";
 
@@ -11,9 +11,9 @@
 // Общие блоки
 @import "./blocks/button.scss";
 @import "./blocks/descriptions.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/header.scss";
-@import "./blocks/nav.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/social.scss";
 @import "./blocks/title.scss";
 @import "./blocks/inner-promo.scss";
