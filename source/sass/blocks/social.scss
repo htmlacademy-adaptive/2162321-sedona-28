@@ -1,16 +1,28 @@
-.main-footer__social {
-  margin-bottom: 37px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-}
-
 .social__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 6px;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: $main-color;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+
+    svg {
+      opacity: 0.6;
+    }
+  }
 }
 
 .social__icon {

@@ -19,6 +19,7 @@
   text-transform: uppercase;
   padding-bottom: 35px;
   margin: 0;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     @include big-title;

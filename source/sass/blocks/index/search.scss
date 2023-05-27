@@ -19,6 +19,7 @@
   @include big-title;
   margin: 0;
   padding-bottom: 31px;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     @include large-title;

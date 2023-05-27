@@ -3,7 +3,7 @@
   color: $main-color-text-second
 }
 
-.service-list {
+.service__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,6 +86,7 @@
 }
 
 .service__description {
+  color: #333333;
   @media (min-width: $mobile-width) {
     br {
       display: none;

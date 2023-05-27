@@ -113,6 +113,7 @@
 
 .advantages__item--line {
   position: relative;
+  color: #333333;
 
   &::before {
     content: "";
@@ -142,6 +143,10 @@
   @media (min-width: $desktop-width) {
     padding: 52px 50px;
   }
+}
+
+.advantages__item--line > h3 {
+  color: #000000;
 }
 
 .advantages__title {

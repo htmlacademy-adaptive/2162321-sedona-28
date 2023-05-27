@@ -17,6 +17,7 @@
   font-weight: 700;
   margin: 0;
   padding-bottom: 37px;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -57,7 +58,7 @@
   }
 }
 
-.videoplayer {
+.video__player {
   display: block;
   background-color: $error-image-color;
   width: 100%;

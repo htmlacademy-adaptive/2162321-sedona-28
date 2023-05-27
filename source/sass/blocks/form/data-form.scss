@@ -56,6 +56,35 @@
   padding-bottom: 34px;
 }
 
+.data-form__icon {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    right: 20px;
+    background: #e6e6e6 center no-repeat;
+
+    @media (min-width: $tablet-width) {
+      right: 0;
+    }
+  }
+
+  &--phone {
+    &::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &--mail {
+    &::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+
 .data-form__list--radio {
   display: flex;
   flex-direction: column;
