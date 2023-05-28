@@ -15,7 +15,7 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 33px 0;
+  padding: 42px 0;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -23,10 +23,6 @@
     padding: 0;
     justify-content: space-between;
     align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -41,7 +37,7 @@
   }
 
   &:active {
-   color: #B3B3B3;
+    color: #B3B3B3;
   }
 
   @media (min-width: $tablet-width) {
@@ -49,23 +45,11 @@
   }
 }
 
-.social__link {
-  position: relative;
-  display: block;
-  width: 48px;
-  height: 48px;
-  background-color: $main-color;
+.main-footer__social {
+  margin-bottom: 30px;
 
-  &:hover {
-    background-color: $color-hover;
-  }
-
-  &:active {
-    background-color: $color-active;
-
-    svg {
-      opacity: 0.6;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -85,7 +69,7 @@
   }
 
   &:active {
-   color: #B3B3B3;
+    color: #B3B3B3;
   }
 }
 
