@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     padding: 66px 155px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 372px 90px 370px;
+  }
 }
 
 .photo__section-title {
@@ -18,6 +22,10 @@
 
   @media (min-width: $tablet-width) {
     @include large-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
   }
 }
 
@@ -108,9 +116,17 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    bottom: 66px;
+    bottom: 80px;
     width: 100%;
+    height: 80px;
     background-color: #00000030;
+    padding: 20px 25px 22px;
+  }
+}
+
+.photo__item--stretch > div {
+  @media (min-width: $desktop-width) {
+    padding: 20px;
   }
 }
 
@@ -124,6 +140,10 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-top: 5px;
   }
 }
 
