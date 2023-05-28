@@ -49,18 +49,6 @@
   }
 }
 
-.data-form__legend--back {
-  @media (min-width: $tablet-width) {
-    background-color: #fff;
-    width: 402px;
-    z-index: 1;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 402px;
-  }
-}
-
 .data-form__list {
   align-items: baseline;
   list-style: none;
@@ -107,6 +95,17 @@
   }
 }
 
+.data-form__title {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    background-color: #ffffff;
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 402px;
+  }
+}
+
 .data-form__list--radio {
   display: flex;
   flex-direction: column;
@@ -131,18 +130,16 @@
     grid-column-gap: 28px;
     padding-top: 36px;
     padding-left: 32px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 }
 
 .data-form--attractions .data-form__legend {
   @media (min-width: $tablet-width) {
-    max-width: 400px;
     margin-bottom: -10px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 400px;
     margin-bottom: -8px;
   }
 }
