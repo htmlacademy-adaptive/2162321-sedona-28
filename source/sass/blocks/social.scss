@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   flex-direction: row;
   gap: 6px;
+
+  @media (min-width: $desktop-width) {
+    gap: 7px;
+  }
 }
 
 .social__link {

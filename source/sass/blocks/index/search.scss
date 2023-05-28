@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  padding: 38px 18px 49px;
+  padding: 40px 18px 49px;
 
   @media (min-width: $tablet-width) {
     max-width: 458px;
@@ -18,11 +18,12 @@
 .search__title {
   @include big-title;
   margin: 0;
-  padding-bottom: 31px;
+  padding-bottom: 21px;
   color: #000000;
 
   @media (min-width: $tablet-width) {
     @include large-title;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +40,7 @@
   margin: 0;
   padding-bottom: 31px;
 
-  @media (min-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     br {
       display: none;
     }

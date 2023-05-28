@@ -34,11 +34,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 58px;
-    margin-bottom: 63px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column-gap: 100px;
+    margin-bottom: 32px;
   }
 
   &::before {
@@ -63,3 +64,38 @@
     }
   }
 }
+
+.page-form__title {
+  @include title;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+  margin: 0;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    @include large-title;
+    padding-bottom: 30px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.page-form__title--large {
+  @media (min-width: $desktop-width) {
+    @include large-title;
+  }
+}
+
+.page-form__description {
+  @include text-small;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+

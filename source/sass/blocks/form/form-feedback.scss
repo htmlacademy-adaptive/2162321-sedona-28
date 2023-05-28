@@ -21,24 +21,26 @@
 
 .form-feedback__sent {
   padding: 0 20px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     min-width: 648px;
     justify-content: space-between;
     margin-bottom: 64px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 768px;
-    margin-left: 96px;
+    margin-left: 98px;
     padding: 0;
   }
 }
 
 .form-feedback__button {
   width: 100%;
+  margin-top: 8px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -50,10 +52,13 @@
   display: block;
   text-align: right;
   color: #333333;
+  padding: 2px 2px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+    padding: 14px 0 0;
   }
 }

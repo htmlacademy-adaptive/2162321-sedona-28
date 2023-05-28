@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 37px 20px 25px;
+  padding: 37px 20px 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 155px;
+    padding: 66px 155px 81px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,12 +16,13 @@
 .photo__section-title {
   @include title;
   font-weight: 700;
-  padding-bottom: 35px;
+  padding-bottom: 26px;
   margin: 0;
   color: #000000;
 
   @media (min-width: $tablet-width) {
     @include large-title;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -138,12 +139,12 @@
   margin: 0;
   padding-top: 15px;
 
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding-top: 5px;
+    color: #ffffff;
   }
 }
 
@@ -154,6 +155,11 @@
   text-transform: none;
   margin: 0;
   padding-bottom: 11px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -190,7 +196,7 @@
   color: #000000;
   font-size: 14px;
   line-height: 21px;
-  padding-left: 8px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     padding-left: 4px;
@@ -198,5 +204,6 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+    padding-left: 0;
   }
 }

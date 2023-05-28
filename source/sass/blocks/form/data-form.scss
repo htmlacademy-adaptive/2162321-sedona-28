@@ -12,7 +12,7 @@
 .data-form--large {
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
-    margin-bottom: 42px;
+    margin-bottom: 33px;
     position: relative;
 
     &::after {
@@ -22,13 +22,13 @@
       width: 100%;
       background-color: #dbdbdb;
       left: 0;
-      top: -13px;
+      top: -21px;
       z-index: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: -12px;
   }
 }
 
@@ -40,11 +40,24 @@
   text-align: center;
   position: relative;
   width: 100%;
-  padding: 24px 0 20px 0;
+  padding: 24px 0 1px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    @include big-title;
+    padding: 0 0 6px;
+  }
+}
+
+.data-form__legend--back {
+  @media (min-width: $tablet-width) {
+    background-color: #fff;
+    width: 402px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 402px;
   }
 }
 
@@ -52,7 +65,11 @@
   align-items: baseline;
   list-style: none;
   margin: 0;
-  padding-bottom: 34px;
+  padding-bottom: 39px;
+}
+
+.data-form__list--contact {
+  padding-bottom: 33px;
 }
 
 .data-form__icon {
@@ -84,43 +101,76 @@
   }
 }
 
+.data-form--impression {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+}
+
 .data-form__list--radio {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 24px;
+  padding-top: 14px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 28px;
+    padding: 17px 40px 30px 0px;
     display: grid;
-    grid-template-columns: repeat(2, 280px);
+    grid-template-columns: repeat(2,280px);
     place-content: center;
-    gap: 36px;
+    grid-row-gap: 24px;
+    grid-column-gap: 14px;
     justify-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 45px;
-    margin-bottom: 73px;
     display: grid;
     grid-template-columns: repeat(3, 280px);
     place-content: center;
     grid-column-gap: 28px;
-    grid-row-gap: 36px;
+    padding-top: 36px;
+    padding-left: 32px;
+    margin-bottom: 23px;
+  }
+}
+
+.data-form--attractions .data-form__legend {
+  @media (min-width: $tablet-width) {
+    max-width: 400px;
+    margin-bottom: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    margin-bottom: -8px;
+  }
+}
+
+.data-form--attractions {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -24px;
   }
 }
 
 .data-form__list--checkbox {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 24px;
+  padding-top: 16px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 28px;
+    padding: 28px 38px 44px 0px;
     display: grid;
-    grid-template-columns: repeat(2, 224px);
+    grid-template-columns: repeat(2,224px);
     place-content: center;
-    grid-column-gap: 32px;
-    grid-row-gap: 36px;
+    grid-column-gap: 31px;
+    grid-row-gap: 25px;
     justify-items: baseline;
   }
 
@@ -129,10 +179,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    gap: 44px;
-    margin-bottom: 87px;
+    margin: 0 -6px 82px 26px;
   }
 }
 
@@ -148,9 +195,10 @@
   min-height: 150px;
   justify-items: stretch;
   padding: 16px;
+  margin-top: 20px;
 
   &::placeholder {
-    color: fade(#000000, 30%);
+    opacity: 0.3;
   }
 
   &:focus {
@@ -160,20 +208,31 @@
 
   @media (min-width: $tablet-width) {
     min-width: 648px;
+    min-height: 160px;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 28px;
-    margin-bottom: 6px;
+    margin-top: 22px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 768px;
-    margin-bottom: 48px;
+    margin-bottom: 4px;
   }
 }
 
 .data-form--emotions {
-  margin: 0 20px 42px;
   border: none;
+  padding: 0 20px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 402px;
+    padding: 0;
+    margin: 0 0 33px;
+  }
 }

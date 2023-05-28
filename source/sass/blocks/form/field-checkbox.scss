@@ -41,6 +41,10 @@
   position: relative;
   margin: 0;
   margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .field-checkbox__input[type="radio"]:checked + .field-checkbox__mark::before {

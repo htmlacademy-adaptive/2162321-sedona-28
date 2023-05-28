@@ -45,8 +45,8 @@
         </section>
         <section class="page-form">
           <div class="page-form__section section-page">
-          <h2 class="section-page__title section-page__title--large">Оставьте свой отзыв</h2>
-          <p class="section-page__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h2 class="page-form__title page-form__title--large">Оставьте свой отзыв</h2>
+          <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
 
           <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="post">
@@ -71,7 +71,7 @@
 
             <fieldset class="data-form">
               <legend class="data-form__legend">Контактная информация:</legend>
-              <ul class="data-form__list">
+              <ul class="data-form__list data-form__list--contact">
                 <li class="field-control data-form__icon data-form__icon--phone">
                   <label class="field-control__label " for="phone">Контактный телефон<sup>*</sup>:</label>
                   <input class="field-control__input" type="tel" name="phone-number" id="phone" placeholder="Введите телефон" required>
@@ -84,8 +84,8 @@
             </fieldset>
           </div>
 
-            <fieldset class="data-form data-form--large">
-              <legend class="data-form__legend">Ваше общее впечатление:</legend>
+            <fieldset class="data-form data-form--large data-form--impression">
+              <legend class="data-form__legend data-form__legend--back">Ваше общее впечатление:</legend>
               <ul class="data-form__list data-form__list--radio">
                 <li class="field-checkbox">
                   <label class="field-checkbox__label">
@@ -111,8 +111,8 @@
               </ul>
             </fieldset>
 
-            <fieldset class="data-form data-form--large">
-              <legend class="data-form__legend">Посещенные достопримечательности:</legend>
+            <fieldset class="data-form data-form--large data-form--attractions">
+              <legend class="data-form__legend data-form__legend--back">Посещенные достопримечательности:</legend>
               <ul class="data-form__list data-form__list--checkbox">
                 <li class="field-checkbox">
                   <label class="field-checkbox__label">
@@ -146,7 +146,7 @@
             </fieldset>
 
             <fieldset class="data-form data-form--large data-form--emotions">
-              <legend class="data-form__legend">Опишите свои эмоции:</legend>
+              <legend class="data-form__legend data-form__legend--back">Опишите свои эмоции:</legend>
               <label class="data-form__label" for="feedback">
                 <span class="visually-hidden">Опишите подробно все свои впечатления в форме.</span>
               </label>
@@ -206,28 +206,28 @@
       </footer>
     </div>
 
-      <div class="modal modal--close">
-        <div class="modal__container">
-          <div class="modal__error">
-            <h2 class="modal__error-title form-title">Что-то пошло<br> не так!</h2>
-            <p class="modal__error-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="button modal__error-button">Ok</button>
+    <div class="modal modal modal--close">
+      <div class="modal__container">
+        <div class="modal__error">
+          <h2 class="modal__error-title form-title">Что-то пошло<br> не так!</h2>
+          <p class="modal__error-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="button modal__error-button">Ok</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--close">
+      <div class="modal__container">
+        <div class="modal__sent">
+          <div class="modal__sent-text">
+            <h2 class="modal__sent-title form-title">Ваш отзыв отправлен!</h2>
+            <p class="modal__sent-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="modal__button-block">
+            <button class="button modal__sent-button">Закрыть окно</button>
           </div>
         </div>
       </div>
-      <div class="modal modal--close">
-        <div class="modal__container">
-          <div class="modal__sent">
-            <div class="modal__sent-text">
-              <h2 class="modal__sent-title form-title">Ваш отзыв отправлен!</h2>
-              <p class="modal__sent-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
-            </div>
-            <div class="modal__button-block">
-              <button class="button modal__sent-button">Закрыть окно</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="js/script.js"></script>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
