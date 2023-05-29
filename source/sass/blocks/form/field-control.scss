@@ -23,8 +23,8 @@
   width: 100%;
 
   &::placeholder {
-    color: #0000004D;
-
+    color: #000000;
+    opacity: 0.3;
   }
 
   &:focus {

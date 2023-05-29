@@ -48,10 +48,11 @@
 }
 
 .form-feedback__required-description {
-  opacity: 0.6;
   display: block;
   text-align: right;
   color: #333333;
+  opacity: 0.6;
+;
   padding: 2px 2px 0;
 
   @media (min-width: $tablet-width) {
@@ -60,5 +61,7 @@
     justify-content: start;
     font-size: 14px;
     padding: 14px 0 0;
+    color: #333333;
+    opacity: 1;
   }
 }
